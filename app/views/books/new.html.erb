@@ -3,3 +3,10 @@
 <%= render 'form', book: @book %>
 
 <%= link_to 'Back', books_path %>
+<div class="field" style="margin-bottom: 4px;">
+  <%= f.label :avatar, style: "display: block" %>
+  <%= f.file_field :avatar %>
+</div>
+
+<div class="actions">
+  <%= f.submit "Sign up" %>
